@@ -179,7 +179,7 @@ function Fun.Create(title)
         tabButton.Size = UDim2.new(0, 149, 0, 35)
         tabButton.Font = Enum.Font.Gotham
         tabButton.Text = tabText
-        tabButton.TextColor3 = Color3.fromRGB(87, 87, 104)
+        tabButton.TextColor3 = Color3.fromRGB(43, 6, 6)
         tabButton.TextSize = 16.000
 
         local newPage = Instance.new("ScrollingFrame")
@@ -254,7 +254,7 @@ function Fun.Create(title)
 
             sectionFrame.Name = "sectionFrame"
             sectionFrame.Parent = newPage
-            sectionFrame.BackgroundColor3 = Color3.fromRGB(37, 37, 44)
+            sectionFrame.BackgroundColor3 = Color3.fromRGB(43, 6, 6)
             sectionFrame.Position = UDim2.new(0, 0, -8.009863e-08, 0)
             sectionFrame.Size = UDim2.new(0.9559322, 0, 0, 36)
             sectionFrame.ClipsDescendants = true
