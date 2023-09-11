@@ -11,15 +11,24 @@ function Fun:DraggingEnabled(frame, parent)
 	
     parent = parent or frame
     
-    -- stolen from wally or kiriot, kek
     local dragging = false
-    local dragInput, mousePos, framePos
-
+    local dragInput, touchStartPos, touchStartParentPos
+    
+    local function getTouchStartPos(touch)
+        return Vector2.new(touch.Position.X, touch.Position.Y)
+    end
+    
     frame.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
             dragging = true
-            mousePos = input.Position
-            framePos = parent.Position
+            
+            if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                touchStartPos = Vector2.new(input.Position.X, input.Position.Y)
+            elseif input.UserInputType == Enum.UserInputType.Touch then
+                touchStartPos = getTouchStartPos(input)
+            end
+                        
+            touchStartParentPos = parent.Position
             
             input.Changed:Connect(function()
                 if input.UserInputState == Enum.UserInputState.End then
@@ -30,19 +39,18 @@ function Fun:DraggingEnabled(frame, parent)
     end)
 
     frame.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement then
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
             dragInput = input
         end
     end)
 
     input.InputChanged:Connect(function(input)
         if input == dragInput and dragging then
-            local delta = input.Position - mousePos
-            parent.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+            local delta = Vector2.new(input.Position.X, input.Position.Y) - touchStartPos
+            parent.Position = UDim2.new(touchStartParentPos.X.Scale, touchStartParentPos.X.Offset + delta.X, touchStartParentPos.Y.Scale, touchStartParentPos.Y.Offset + delta.Y)
         end
     end)
 end
-
 
 function Fun.Create(title)
     local nightmarefun = Instance.new("ScreenGui")
