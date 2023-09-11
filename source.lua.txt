@@ -469,13 +469,13 @@ function Fun.Create(title)
 
                 checkBox.Name = "checkBox"
                 checkBox.Parent = toggleFrame
-                checkBox.BackgroundColor3 = Color3.fromRGB(47, 47, 56)
+                checkBox.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
                 checkBox.BackgroundTransparency = 1.000
                 checkBox.Position = UDim2.new(-0.0381679386, 0, 0.0263157934, 0)
                 checkBox.Size = UDim2.new(0, 25, 0, 25)
                 checkBox.ZIndex = 2
                 checkBox.Image = "rbxassetid://3926311105"
-                checkBox.ImageColor3 = Color3.fromRGB(62, 62, 74)
+                checkBox.ImageColor3 = Color3.fromRGB(10, 10, 10)
                 checkBox.ImageRectOffset = Vector2.new(940, 784)
                 checkBox.ImageRectSize = Vector2.new(48, 48)
 
@@ -487,13 +487,13 @@ function Fun.Create(title)
 
                 checkBoxInfo.Name = "checkBoxInfo"
                 checkBoxInfo.Parent = toggleFrame
-                checkBoxInfo.BackgroundColor3 = Color3.fromRGB(47, 47, 56)
+                checkBoxInfo.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
                 checkBoxInfo.BackgroundTransparency = 1.000
                 checkBoxInfo.Position = UDim2.new(0.106870227, 0, -0.157894731, 0)
                 checkBoxInfo.Size = UDim2.new(0, 200, 0, 19)
                 checkBoxInfo.Font = Enum.Font.Gotham
                 checkBoxInfo.Text = togInfo
-                checkBoxInfo.TextColor3 = Color3.fromRGB(62, 62, 74)
+                checkBoxInfo.TextColor3 = Color3.fromRGB(10, 10, 10)
                 checkBoxInfo.TextSize = 14.000
                 checkBoxInfo.TextXAlignment = Enum.TextXAlignment.Left
                 local clickDe = false
@@ -515,7 +515,7 @@ function Fun.Create(title)
                     if not tog then
                         checkBox.Parent:TweenSize(UDim2.new(0, 262,0, 25), "InOut", "Linear", 0.08)
                         game.TweenService:Create(checkBox, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                            ImageColor3 = Color3.fromRGB(62, 62, 74)
+                            ImageColor3 = Color3.fromRGB(10, 10, 10)
                         }):Play()
                     else
                         checkBox.Parent:TweenSize(UDim2.new(0, 262,0, 25), "InOut", "Linear", 0.08)
@@ -552,11 +552,11 @@ function Fun.Create(title)
                             }):Play()
                         else
                             game.TweenService:Create(checkBox.Parent.checkBoxInfo, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                                TextColor3 = Color3.fromRGB(62, 62, 74)
+                                TextColor3 = Color3.fromRGB(10, 10, 10)
                             }):Play()
                             checkBox.ImageRectOffset = Vector2.new(940, 784)
                             game.TweenService:Create(checkBox, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                                ImageColor3 = Color3.fromRGB(62, 62, 74)
+                                ImageColor3 = Color3.fromRGB(10, 10, 10)
                             }):Play()
                         end
                         wait(0.8)
@@ -575,7 +575,7 @@ function Fun.Create(title)
 
                     textBoxFrame.Name = "textBoxFrame"
                     textBoxFrame.Parent = sectionFrame
-                    textBoxFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 52)
+                    textBoxFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
                     textBoxFrame.BackgroundTransparency = 1.000
                     textBoxFrame.Position = UDim2.new(0.0354609936, 0, 0.344827592, 0)
                     textBoxFrame.Size = UDim2.new(0, 262, 0, 28)
