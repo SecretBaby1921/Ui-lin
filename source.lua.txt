@@ -80,7 +80,7 @@ function Fun.Create(title)
     Shadow.Position = UDim2.new(0.349795759, 0, 0.171759665, 0)
     Shadow.Size = UDim2.new(0, 525, 0, 468)
     Shadow.Image = "http://www.roblox.com/asset/?id=6105530152"
-    Shadow.ImageColor3 = Color3.fromRGB(18, 18, 18)
+    Shadow.ImageColor3 = Color3.fromRGB(43, 6, 6)
 
     mainFrame.Name = "mainFrame"
     mainFrame.Parent = Shadow
