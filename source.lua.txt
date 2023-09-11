@@ -254,7 +254,7 @@ function Fun.Create(title)
 
             sectionFrame.Name = "sectionFrame"
             sectionFrame.Parent = newPage
-            sectionFrame.BackgroundColor3 = Color3.fromRGB(43, 6, 6)
+            sectionFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
             sectionFrame.Position = UDim2.new(0, 0, -8.009863e-08, 0)
             sectionFrame.Size = UDim2.new(0.9559322, 0, 0, 36)
             sectionFrame.ClipsDescendants = true
