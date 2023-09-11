@@ -420,12 +420,12 @@ function Fun.Create(title)
                     if callBackDebounce then
                         mouseleft = false
                         game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),{
-                            BackgroundColor3 = Color3.fromRGB(73, 56, 84)
+                            BackgroundColor3 = Color3.fromRGB(43, 6, 6)
                         }):Play()
                     else
                         mouseleft = false
                         game.TweenService:Create(TextButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),{
-                            BackgroundColor3 = Color3.fromRGB(98, 75, 113)
+                            BackgroundColor3 = Color3.fromRGB(43, 6, 6)
                         }):Play()
                     end
                 end)
@@ -502,7 +502,7 @@ function Fun.Create(title)
                 checkBox.MouseEnter:Connect(function()
                     if not tog then
                         game.TweenService:Create(checkBox, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                            ImageColor3 = Color3.fromRGB(53, 53, 63)
+                            ImageColor3 = Color3.fromRGB(10, 10, 10)
                         }):Play()
                     else
                         game.TweenService:Create(checkBox, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
@@ -588,7 +588,7 @@ function Fun.Create(title)
                     UIListLayout.Padding = UDim.new(0, 3)
 
                     TextBox.Parent = textBoxFrame
-                    TextBox.BackgroundColor3 = Color3.fromRGB(43, 43, 52)
+                    TextBox.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
                     TextBox.Position = UDim2.new(0, 0, 0.106060609, 0)
                     TextBox.Size = UDim2.new(0, 262, 0, 26)
                     TextBox.ClearTextOnFocus = false
@@ -659,7 +659,7 @@ function Fun.Create(title)
 
                     sliderBtn.Name = "sliderBtn"
                     sliderBtn.Parent = sliderFrame
-                    sliderBtn.BackgroundColor3 = Color3.fromRGB(47, 47, 56)
+                    sliderBtn.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
                     sliderBtn.BorderSizePixel = 0
                     sliderBtn.Position = UDim2.new(0, 0, 0.616923094, 0)
                     sliderBtn.Size = UDim2.new(0, 262, 0, 9)
@@ -696,7 +696,7 @@ function Fun.Create(title)
                     sliderBox.ClearTextOnFocus = false
                     sliderBox.Font = Enum.Font.Gotham
                     sliderBox.Text = minvalue
-                    sliderBox.TextColor3 = Color3.fromRGB(96, 96, 115)
+                    sliderBox.TextColor3 = Color3.fromRGB(10, 10, 10)
                     sliderBox.TextScaled = true
                     sliderBox.TextSize = 14.000
                     sliderBox.TextWrapped = true
