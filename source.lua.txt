@@ -84,7 +84,7 @@ function Fun.Create(title)
 
     mainFrame.Name = "mainFrame"
     mainFrame.Parent = Shadow
-    mainFrame.BackgroundColor3 = Color3.fromRGB(47, 47, 56)
+    mainFrame.BackgroundColor3 = Color3.fromRGB(18, 20, 19)
     mainFrame.Position = UDim2.new(0.0500000007, 0, 0.0780000016, 0)
     mainFrame.Size = UDim2.new(0, 475, 0, 396)
 
@@ -139,7 +139,7 @@ function Fun.Create(title)
 
     cover.Name = "cover"
     cover.Parent = mainSide
-    cover.BackgroundColor3 = Color3.fromRGB(31, 3, 3)
+    cover.BackgroundColor3 = Color3.fromRGB(20, 20, 19)
     cover.BorderSizePixel = 0
     cover.Position = UDim2.new(0.949999988, 0, 0, 0)
     cover.Size = UDim2.new(0, 9, 0, 396)
